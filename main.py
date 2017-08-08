@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.debug = True
 socketio = SocketIO(app)
 
-pin_out_1 = 18
+pin_out_1 = 6 #18
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(pin_out_1, GPIO.OUT)
 GPIO.output(pin_out_1, True)
@@ -36,4 +36,4 @@ def ws_btn(message):
         socketio.emit('status_btn', data, namespace='/socket')
 
 if __name__ == '__main__':
-    socketio.run(app, "0.0.0.0", port=5008)
+    socketio.run(app, "0.0.0.0", port=5678)
