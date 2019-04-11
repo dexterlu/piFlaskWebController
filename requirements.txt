@@ -1,5 +1,5 @@
 click==6.6
-Flask==0.11.1
+Flask==0.12.3
 Flask-SocketIO==2.5
 gevent==1.1.1
 greenlet==0.4.10
